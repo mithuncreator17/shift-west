@@ -1,0 +1,42 @@
+type Product = 
+ record {
+   category: text;
+   id: nat;
+   name: text;
+   price: nat;
+ };
+type Category = 
+ record {
+   id: nat;
+   name: text;
+ };
+service : {
+  addCategory: (name: text, password: text) ->
+   (variant {
+      err: text;
+      ok: Category;
+    });
+  addProduct: (name: text, price: nat, category: text, password: text) ->
+   (variant {
+      err: text;
+      ok: Product;
+    });
+  deleteCategory: (id: nat, password: text) ->
+   (variant {
+      err: text;
+      ok: bool;
+    });
+  deleteProduct: (id: nat, password: text) -> (variant {
+                                                 err: text;
+                                                 ok: bool;
+                                               });
+  getCategory: (id: nat) -> (opt Category) query;
+  getProduct: (id: nat) -> (opt Product) query;
+  listCategories: () -> (vec Category) query;
+  listProducts: () -> (vec Product) query;
+  updateProduct: (id: nat, name: text, price: nat, category: text, password:
+   text) -> (variant {
+               err: text;
+               ok: Product;
+             });
+}

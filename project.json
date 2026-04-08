@@ -1,0 +1,24 @@
+{
+  "overview": "ShiftWest is a minimalist streetwear online store for a Tiruppur-based brand. Customers browse products by category, add to cart, and checkout via WhatsApp. A hidden admin panel lets the owner manage products and categories with changes persisted in the backend.",
+  "features": [
+    "Product browsing with category filter tabs",
+    "Add to cart with item counter",
+    "WhatsApp checkout with formatted order message",
+    "Instagram link",
+    "Hidden admin panel (5 logo clicks + password)",
+    "Full CRUD for products and categories",
+    "Persistent backend storage via Motoko canister",
+    "Minimalist black/white streetwear aesthetic"
+  ],
+  "category": "ecommerce",
+  "tags": [
+    "streetwear",
+    "ecommerce",
+    "fashion",
+    "whatsapp-checkout",
+    "admin-panel",
+    "motoko",
+    "tiruppur"
+  ],
+  "last_updated": "2026-04-08T15:05:53.329Z"
+}
